@@ -1,0 +1,26 @@
+[project]
+name = "rl-hw3"
+version = "0.1.0"
+description = "NCHU RL HW3 – DQN and variants"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.2",
+    "torchvision>=0.17",
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "pillow>=10.0",
+    "pytorch-lightning>=2.2",
+    "tqdm>=4.66",
+    "ipykernel>=6.29",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.0",
+    "ipywidgets>=8.0",
+]
+# NOTE: torch/torchvision are intentionally NOT pinned to a CUDA index here.
+# uv ignores local version segments (+cu126 vs +cpu) during resolution and
+# always picks the PyPI CPU build.  Use setup_gpu.bat once after `uv sync`
+# to switch to the CUDA build.  Run scripts with `uv run --frozen` so that
+# uv does not re-sync and revert the CUDA packages.

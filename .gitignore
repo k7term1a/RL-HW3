@@ -1,0 +1,23 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ── Virtual environment ──────────────────────────────────────────────────────
+.venv/
+venv/
+
+# ── Outputs: model weights (large binaries, regeneratable) ──────────────────
+outputs/**/*.pt
+
+# ── Outputs: per-episode GIFs (hundreds of files; summary GIFs are kept) ────
+# Keeps: metrics.png, training_progress.gif, *_progress.gif, comparison.png
+outputs/**/ep*.gif
+
+# ── Editor / OS ──────────────────────────────────────────────────────────────
+.vscode/
+*.swp
+*~
+.DS_Store
+Thumbs.db
