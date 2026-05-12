@@ -13,7 +13,31 @@ outputs/**/*.pt
 
 # ── Outputs: per-episode GIFs (hundreds of files; summary GIFs are kept) ────
 # Keeps: metrics.png, training_progress.gif, *_progress.gif, comparison.png
+# Also keeps the specific snapshots referenced in README (negation rules below)
 outputs/**/ep*.gif
+
+# README snapshot GIFs — must be committed so they render on GitHub
+!outputs/hw3_1/ep0001.gif
+!outputs/hw3_1/ep0250.gif
+!outputs/hw3_1/ep0500.gif
+!outputs/hw3_1/ep1000.gif
+!outputs/hw3_2/double_dqn/ep0001.gif
+!outputs/hw3_2/double_dqn/ep0300.gif
+!outputs/hw3_2/double_dqn/ep0600.gif
+!outputs/hw3_2/dueling_dqn/ep0001.gif
+!outputs/hw3_2/dueling_dqn/ep0300.gif
+!outputs/hw3_2/dueling_dqn/ep0510.gif
+!outputs/hw3_2/dueling_double_dqn/ep0001.gif
+!outputs/hw3_2/dueling_double_dqn/ep0300.gif
+!outputs/hw3_2/dueling_double_dqn/ep0560.gif
+!outputs/hw3_3/ep0001.gif
+!outputs/hw3_3/ep0200.gif
+!outputs/hw3_3/ep0400.gif
+!outputs/hw3_3/ep0700.gif
+!outputs/hw3_4/ep0001.gif
+!outputs/hw3_4/ep0500.gif
+!outputs/hw3_4/ep1500.gif
+!outputs/hw3_4/ep5000.gif
 
 # ── Editor / OS ──────────────────────────────────────────────────────────────
 .vscode/
